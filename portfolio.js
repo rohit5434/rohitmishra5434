@@ -50,7 +50,7 @@ herosectionRightMyImage.addEventListener("click",function(){
    if(herosectionRightMyImage.src.includes("rohit.png")){
       herosectionRightMyImage.src="image/rohit3.png";
    }else{
-      herosectionRightMyImage.src="rohit.png";
+      herosectionRightMyImage.src="image/rohit.png";
    }
 })
 
