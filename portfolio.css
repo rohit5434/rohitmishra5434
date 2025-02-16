@@ -1,0 +1,979 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: px;
+    transition: background 0.3s, color 0.3s;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Ensure all text inside body turns white in dark mode */
+/* Default Navbar Link Style */
+.nav-options a {
+    color: black;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.dark-mode .nav-options a {
+    color: white;
+}
+.dark-mode button,
+.dark-mode button a {
+    color: white;
+}
+.dark-mode h1,
+.dark-mode p,
+.dark-mode button,
+.dark-mode nav a {
+    color: white;
+}
+.herosection-left-btn button a {
+    color: white;
+    text-decoration: none;
+}
+
+.dark-mode .herosection-left-btn button a {
+    color: white;
+}
+
+#darkModeToggle {
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ /*    padding: 15px 50px; */
+  /*   background-color: #222; */
+    /* color: white; */
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.dark-mode .nav {
+    color: white;
+    background-color: #111; /* Dark background */
+    border: 1px solid #444; /* Subtle border for better visibility */
+}
+.dark-mode .nav-options a {
+    color: white;
+}
+
+/* Dark Mode for Contact Button */
+.dark-mode .nav-btn button {
+    background-color: #007bff;
+    color: white;
+}
+
+.dark-mode .nav-btn button:hover {
+    background-color: #0056b3;
+}
+.nav-options a {
+    color: black;
+    font-size: 21px;
+    font-weight: 600;
+   /*  color: white; */
+    text-decoration: none;
+    margin: 0 15px;
+    padding-left: 20px;
+}
+.nav-options{
+    margin-left: 100px;
+}
+.nav-options a:hover{
+    color: palegreen;
+  /*   border-bottom: 3px solid black; */
+
+}
+.nav-h1 span{
+   color: palegreen;
+}
+.nav-h1{
+    margin-left: 20px;
+
+}
+.nav-btn button{
+    height: 40px;
+    width: 150px;
+    background-color: black;
+     border-radius: 10px;
+     border: none;
+     font-size: 16px;
+     font-weight: 500;   
+     cursor: pointer;
+     color: palegreen;
+}
+.nav-btn button:hover{
+    background-color:palegreen;
+    color: black;
+}
+.nav-btn{
+    padding-left: 250px;
+}
+.ok{
+    padding-left: 50px;
+    padding-bottom: 30px;
+}
+/* Hero Section */
+.herosection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    padding-top: 160px;
+}
+.herosection{
+    height: 480px;
+    width: 100%;
+    display: flex;
+
+}
+.herosection-left{
+    height: 480px;
+    width: 50%;
+
+}
+.herosection-left-1{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.herosection-left-para{
+    font-size: 24px;
+    padding-bottom: 0px;
+}
+.herosection-left-h1{
+    font-size: 25px;
+    color: palegreen;
+    padding-bottom: 5px;
+
+}
+.herosection-left-btn{
+    padding-top: 5px;
+}
+.herosection-left-btn button{
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: palegreen;
+    font-size: 15px;
+    cursor: pointer;
+}
+.herosection-left-btn a{
+    text-decoration: none;
+    color: palegreen;
+}
+.herosection-left {
+    width: 50%;
+}
+
+.herosection-right {
+    width: 45%;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 70px;
+}
+
+.about-left {
+    width: 50%;
+}
+
+.about-right {
+    width: 45%;
+}
+
+/* Skills Heading Above Bars */
+.skills-heading {
+    text-align: left;
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.bars {
+    margin-bottom: 10px;
+}
+
+.bars .info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.line {
+    width: 100%;
+    height: 8px;
+    background-color: lightgray;
+    position: relative;
+    border-radius: 5px;
+}
+
+/* Individual Progress Lines */
+.line.html { background: linear-gradient(to right, #f16529 100%, transparent 100%); }
+.line.css { background: linear-gradient(to right, #2965f1 90%, transparent 100%); }
+.line.js { background: linear-gradient(to right, #f7df1e 80%, transparent 100%); }
+.line.MVC { background: linear-gradient(to right, #6c757d 90%, transparent 100%); }
+.line.server { background: linear-gradient(to right, #ff4500 90%, transparent 100%); }
+.line.angular { background: linear-gradient(to right, #dd1b16 80%, transparent 100%); }
+.line.c { background: linear-gradient(to right, #00599c 90%, transparent 100%); }
+.line.django { background: linear-gradient(to right, #092e20 80%, transparent 100%); }
+
+/* about right */
+.about-right{
+    height: 480px;
+    width: 45%;
+}
+.about-right-h1{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.about-right-para{
+    font-size: 15px;
+}
+.about-right-skills{
+    color: black;
+}
+.about-right-education{
+    color: palegreen;
+}
+.about-right-list{
+    color: black;
+}
+
+
+.projects {
+    padding: 0px 0%;
+    text-align: center;
+}
+
+.projects-h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.projects-h1::after {
+    content: '';
+    width: 60%;
+    height: 4px;
+    background: palegreen;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.projects-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.projects-box {
+   
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 320px;
+    text-align: center;
+}
+
+.projects-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.projects-box a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.projects-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.project-description {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background: linear-gradient(to right, rgb(163, 255, 102), #00a6ff);
+    color: white;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.projects-btn {
+    margin-top: 30px;
+}
+
+.projects-btn a {
+    text-decoration: none;
+}
+
+.projects-btn button {
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+    color: palegreen;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.projects-btn button:hover {
+    background: linear-gradient(135deg, #ff3300, #ff6600);
+    transform: scale(1.1);
+}
+
+
+
+.contact{
+    margin-top: 50px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-left{
+    height: 500px;
+    width: 35%;
+
+}
+.contact-left-h1{
+ font-size: 30px;
+ margin-top: 50px;
+ margin-left: 30px;
+}
+.contact-left-telegram{
+    display:  flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    gap: 10px;
+
+}
+.contact-left-telegram i{
+    font-size: 30px;
+     color: blue;
+
+}
+.contact-left-telegram span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-left-phone{
+    display:  flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 30px;
+    gap: 10px;
+
+}
+.contact-left-phone i{
+    font-size: 30px;
+     color: blue;
+
+}
+.contact-left-phone span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.contact-left-socialmedia{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.contact-left-socialmedia i{
+    margin-left: 10px;
+}
+
+.contact-btn-1 button{
+ height: 50px;
+ width: 250px;
+ background-color: black;
+ color: palegreen;
+ border: none;
+ border-radius: 10px;
+ margin-top: 30px;
+ margin-left: 20px;
+ font-size: 18px;
+}
+.contact-right{
+    height: 500px;
+    width: 50%;
+    
+}
+
+
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.input .input1{
+    height: 50px;
+    width: 500px;
+    margin-top: 70px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+.input .input2{
+    height: 50px;
+    width: 500px;
+    margin-top: 70px;
+    border-radius: 10px;
+    border: 2px solid black;
+    font-size: 20px;
+}
+textarea{
+    height: 100px;
+    width: 500px;
+    border: 2px solid black;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.submit-btn button{
+    height: 50px;
+    width: 500px;
+    margin-top: 20px;
+    background-color: black;
+    color: palegreen;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+/* certificates */
+.certificates {
+    text-align: center;
+    padding: 0px 0;
+   /*  background-color:; */
+}
+
+.certificates-h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.certificates-preview {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.certificates-preview img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.certificates-btn button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: black;
+    color: palegreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.certificates-btn button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Certificates Page Styling */
+/* Certificates Page Styling */
+.certificates-page {
+    text-align: center;
+    padding: 0px 0px;
+    background: linear-gradient(135deg, #1e3, #2a5298);
+    color: white;
+    min-height: 100vh;
+}
+
+.certificates-page h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Container for Certificates */
+.certificates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Certificate Box */
+.certificate {
+    width: 320px;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    cursor: pointer; /* Makes it clear it's clickable */
+}
+
+/* Certificate Image */
+.certificate img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effects */
+.certificate:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+.certificate:hover img {
+    transform: scale(1.1);
+}
+
+/* Back Button */
+.back-btn {
+    margin-top: 30px;
+    padding: 12px 25px;
+    font-size: 1.3rem;
+    background: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.back-btn:hover {
+    background: #ff2e45;
+    transform: scale(1.05);
+}
+
+/* Dark Mode Support */
+.dark-mode .certificates-page {
+    background: linear-gradient(135deg, #121212, #1c1c1c);
+    color: white;
+}
+
+.dark-mode .certificate {
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode .back-btn {
+    background: #ff4b5c;
+}
+
+/* ========== Modal Popup for Full Image ========== */
+.modal {
+    display: none; /* Initially hidden */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* responsive */
+/* ========== RESPONSIVENESS ========== */
+
+/* ========== RESPONSIVENESS ========== */
+
+/* ✅ Tablets and Medium Screens (Max width: 1024px) */
+@media (max-width: 1024px) {
+    .nav {
+        display: flex;
+        font-size: 20px;
+       
+    }
+    .nav-options{
+        display: flex;
+        margin-left: 20px;
+    }
+    .nav-options a{
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        display: flex;
+    }
+    .nav-btn{
+        padding-left: 7px;
+    }
+    
+    .nav-btn button{
+        height: 30px;
+        width: 90px;
+        background-color: black;
+         border-radius: 10px;
+         border: none;
+         font-size: 10px;
+         font-weight: 500;   
+         cursor: pointer;
+         color: palegreen;
+    }
+    .herosection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        padding-top: 100px;
+    }
+
+    .herosection-left h1 {
+        font-size: 28px;
+    }
+
+    .herosection-left p {
+        font-size: 16px;
+    }
+
+    .herosection-right img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-left, .about-right {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .bars {
+        width: 100%;
+    }
+
+    .certificates-preview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificates-preview img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .projects-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-box {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 15px;
+    }
+
+    .contact {
+        margin-top: 200px;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contact-right input, 
+    .contact-right textarea {
+        font-size: 14px;
+    }
+}
+
+/* ✅ Mobile Devices (Max width: 768px) */
+@media (max-width: 768px) {
+    .nav {
+        display: flex;
+        font-size: 10px;
+       
+    }
+    .nav-options{
+        display: flex;
+    }
+    .nav-options a{
+        color: black;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+        display: flex;
+        padding-left: 3px;
+    }
+    .nav-btn{
+        padding-left: 5px;
+    }
+    
+    .nav-btn button{
+        height: 20px;
+        width: 70px;
+        background-color: black;
+         border-radius: 10px;
+         border: none;
+         font-size: 10px;
+         font-weight: 500;   
+         cursor: pointer;
+         color: palegreen;
+    }
+    .herosection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        padding-top: 100px;
+    }
+
+    .herosection-left h1 {
+        font-size: 28px;
+    }
+
+    .herosection-left p {
+        font-size: 16px;
+    }
+
+    .herosection-right img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-left, .about-right {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .bars {
+        width: 100%;
+    }
+
+    .certificates-preview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificates-preview img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .projects-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-box {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 15px;
+    }
+
+    .contact {
+        margin-top: 200px;
+        flex-direction: column;
+       /*  text-align: center;
+        align-items: center; */
+    }
+
+    .contact-right input, 
+    .contact-right textarea {
+        font-size: 14px;
+    }
+}
+
+/* ✅ Small Mobile Devices (Max width: 480px) */
+@media (max-width: 480px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        margin-left: 0px;
+        transition: background 0.3s, color 0.3s;
+    }
+    .nav {
+        display: flex;
+        font-size: 7px;
+       height: 70px;
+       margin-left: 0px;
+    }
+    .nav-options{
+        display: flex;
+    }
+    .nav-options a{
+        color: black;
+        font-size: 7px;
+        font-weight: 500;
+        text-decoration: none;
+        display: flex;
+        padding-left: 0px;
+    }
+    .nav-btn{
+        padding-left: 0px;
+        padding-right: 50px;
+    }
+    
+    .nav-btn button{
+        height: 10px;
+        width: 50px;
+        background-color: black;
+         border-radius: 10px;
+         border: none;
+         font-size: 7px;
+         font-weight: 500;   
+         cursor: pointer;
+         color: palegreen;
+    }
+    .herosection {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        padding-top: 70px;
+        margin-left: 0px;
+    }
+
+    .herosection-left h1 {
+        font-size: 20px;
+    }
+
+    .herosection-left p {
+        font-size: 10px;
+    }
+
+    .herosection-right img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-left, .about-right {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .bars {
+        width: 100%;
+    }
+
+    .certificates-preview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .certificates-preview img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+
+    .projects-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects-box {
+        width: 90%;
+        max-width: 400px;
+        margin-bottom: 15px;
+    }
+
+    .contact {
+        margin-top: 200px;
+        margin-left: 0px;
+     
+       /*  text-align: center;
+        align-items: center; */
+    }
+     .contact-left h1{
+        margin-left: 0px;
+        font-size: 20px;
+     }
+    .contact-right input, 
+    .contact-right textarea {
+        font-size: 14px;
+        margin-left: 0px;
+    }
+}
+
+
+   

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates - Rohit Mishra</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+</head>
+<body>
+    <div class="certificates-page">
+        <h1>My Certificates <i class="fa-solid fa-award"></i></h1>
+        
+        <div class="certificates-container">
+            <div class="certificate">
+                <img src="image/oasis.jpeg" alt="Certificate 1">
+            </div>
+            <div class="certificate">
+                <img src="image/Udemyjs.jpg" alt="Certificate 2">
+            </div>
+            <div class="certificate">
+                <img src="/image/java.jpeg" alt="Certificate 3">
+            </div>
+            <div class="certificate">
+                <img src="image/javasol.jpeg" alt="Certificate 1">
+            </div>
+            <div class="certificate">
+                <img src="image/python.jpeg" alt="Certificate 1">
+            </div>
+            <div class="certificate">
+                <img src="image/csolo.jpeg" alt="Certificate 1">
+            </div>
+             <div class="certificate">
+                <img src="image/download50day.png" alt="Certificate 1">
+            </div>
+            <!-- Add more certificates as needed -->
+        </div>
+
+        <button class="back-btn" onclick="window.location.href='portfolio.html'">Back to Portfolio</button>
+    </div>
+    <script>
+        // Get the modal and elements
+        const modal = document.createElement("div");
+        modal.classList.add("modal");
+        modal.innerHTML = `<span class="close-btn">&times;</span><img id="fullImage">`;
+        document.body.appendChild(modal);
+        
+        const modalImg = modal.querySelector("#fullImage");
+        const closeModal = modal.querySelector(".close-btn");
+    
+        // Function to open modal when an image is clicked
+        document.querySelectorAll(".certificate img").forEach(img => {
+            img.addEventListener("click", function() {
+                modal.style.display = "flex";
+                modalImg.src = this.src;
+            });
+        });
+    
+        // Function to close modal when clicking close button
+        closeModal.addEventListener("click", function() {
+            modal.style.display = "none";
+        });
+    
+        // Close modal when clicking outside the image
+        modal.addEventListener("click", function(e) {
+            if (e.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    </script>
+    
+</body>
+</html>
