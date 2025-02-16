@@ -93,9 +93,9 @@ body {
     margin: 0 15px;
     padding-left: 20px;
 }
-.nav-options{
-    margin-left: 100px;
-}
+/* .nav-options{
+    margin-left: 0px;
+} */
 .nav-options a:hover{
     color: palegreen;
   /*   border-bottom: 3px solid black; */
@@ -127,7 +127,7 @@ body {
     padding-left: 20px;
 }
 .ok{
-    padding-left: 50px;
+    padding-left: 0px;
     padding-bottom: 30px;
 }
 /* Hero Section */
