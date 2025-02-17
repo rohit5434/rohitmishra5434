@@ -858,122 +858,299 @@ textarea{
     }
 }
 
+
+
+
+
+
 /* ✅ Small Mobile Devices (Max width: 480px) */
+
+   /* Default: Show Normal Navbar & Hide Sidebar */
+/* ✅ Default (Desktop) - Hide Sidebar & Menu Button */
+.menu-btn {
+    display: none; /* Hidden on desktop */
+}
+
+.sidebar {
+    display: none; /* Hidden on desktop */
+}
+
+/* ✅ Mobile View */
 @media (max-width: 480px) {
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        margin-left: 0px;
-        transition: background 0.3s, color 0.3s;
+
+    body{
+        width: 90%;
     }
+    /* Navbar container */
     .nav {
-        display: flex;
-        font-size: 7px;
-       height: 70px;
-       margin-left: 0px;
+        flex-direction: row;
+         justify-content: space-between; 
+         align-items: center; 
+        padding: 0px 5px;
+        position: fixed;
+        font-size: 20px;
+        width: 480px;
+        background: white;
+       /*  z-index: 1000; */
     }
-    .nav-options{
-        display: flex;
-    }
-    .nav-options a{
-        color: black;
-        font-size: 7px;
-        font-weight: 500;
-        text-decoration: none;
-        display: flex;
-        padding-left: 0px;
+     .ok{
+        margin-right: 90px;
+        margin-bottom: 20px;
+     }
+    /* Hide normal navbar options and show menu button */
+    .nav-options {
+        display: none;
     }
     .nav-btn{
-        padding-left: 0px;
-        padding-right: 50px;
-    }
-    
-    .nav-btn button{
-        height: 10px;
-        width: 50px;
-        background-color: black;
-         border-radius: 10px;
-         border: none;
-         font-size: 7px;
-         font-weight: 500;   
-         cursor: pointer;
-         color: palegreen;
-    }
-    .herosection {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 20px;
-        padding-top: 70px;
-        margin-left: 0px;
+        display: none;
     }
 
-    .herosection-left h1 {
-        font-size: 20px;
+    .menu-btn {
+        display: block;
+        background: black;
+        border-radius: 15px;
+        border: none;
+        font-size: 34px;
+        color: palegreen;
+        margin-bottom: 15px;
+        margin-left: 10px;
+        cursor: pointer;
     }
 
-    .herosection-left p {
-        font-size: 10px;
-    }
-
-    .herosection-right img {
-        max-width: 80%;
-        height: auto;
-    }
-
-    .about {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-left, .about-right {
-        width: 100%;
-        padding: 15px;
-    }
-
-    .bars {
-        width: 100%;
-    }
-
-    .certificates-preview {
+    /* Sidebar for mobile menu */
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 70%;
+        height: 100%;
+        background: palegreen;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        transition: 0.3s ease-in-out;
     }
 
-    .certificates-preview img {
-        max-width: 200px;
-        margin-bottom: 10px;
+    .sidebar a {
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        padding: 19px;
+        display: block;
+        text-align: center;
+        width: 100%;
     }
 
-    .projects-boxes {
-        flex-direction: column;
-        align-items: center;
+    .sidebar a:hover {
+        background: white;
+        width: 70%;
+        border-radius: 10px;
     }
 
-    .projects-box {
-        width: 90%;
-        max-width: 400px;
-        margin-bottom: 15px;
+    .sidebar.active {
+        left: 0;
     }
 
-    .contact {
-        margin-top: 200px;
-        margin-left: 0px;
-     
-       /*  text-align: center;
-        align-items: center; */
+    .close-btn {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 39px;
+        background: none;
+        border: none;
+        color: red;
+        cursor: pointer;
     }
-     .contact-left h1{
-        margin-left: 0px;
-        font-size: 20px;
-     }
-    .contact-right input, 
-    .contact-right textarea {
+
+    /* Contact button */
+    .nav-btn button {
         font-size: 14px;
-        margin-left: 0px;
+        padding: 5px 10px;
+    }
+
+    /* Dark mode toggle */
+    #darkModeToggle {
+        font-size: 18px;
+        padding: 5px 8px;
+    }
+
+
+
+/* hero */
+
+    .herosection {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px;
+        padding-top: 100px;
+    }
+    .herosection{
+        height: 350px;
+        width: 100%;
+        display: flex;
+    
+    }
+    .herosection-left{
+        height: 350px;
+        width: 50%;
+    
+    }
+    .herosection-left-1{
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+    .herosection-left-para{
+        font-size: 14px;
+        padding-bottom: 0px;
+    }
+    .herosection-left-h1{
+        font-size: 10px;
+        color: palegreen;
+        padding-bottom: 5px;
+    
+    }
+    .herosection-left-btn{
+        padding-top: 5px;
+    }
+    .herosection-left-btn button{
+        height: 40px;
+        width: 200px;
+        border-radius: 10px;
+        border: none;
+        background-color: black;
+        color: palegreen;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    .herosection-left-btn a{
+        text-decoration: none;
+       /*  color: palegreen; */
+    }
+    .herosection-left {
+        width: 50%;
+    }
+    .herosection-right {
+        width: 45%;
+    }
+  
+    /* about */
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0px;
+    }
+    
+    .about-left {
+        width: 90%;
+    }
+    
+    .about-right {
+        width: 90%;
+        text-align: center;
+    }
+    
+    /* Skills Heading Above Bars */
+    .skills-heading {
+        text-align: left;
+        margin-bottom: 15px;
+        font-size: 22px;
+        font-weight: bold;
+    }
+   
+    .about-right{
+        height: 480px;
+        width: 90%;
+    }
+    .about-right-para{
+        font-size: 15px;
+    }
+    .about-right-skills{
+        color: black;
+    }
+    .about-right-education{
+        color: palegreen;
+        font-size: 20px;
+        padding-top: 10px;
+        margin-bottom: 5px; 
+    }
+    .about-right-list p{
+        padding: 0px;
+        font-size: 18px;
+        padding-top: 1px;
+    }
+    /* certificates */
+    .certificates {
+        padding-top: 90px;
+        padding-left: 30px;
+      width: 90%;
+    }
+    
+    .certificates-h1 {
+        font-size: 18px;
+        /* color: palegreen; */
+        font-weight: 900;
+    }
+   
+    /* projects */
+    .projects-h1 {
+        font-size: 20px;
+    }
+
+    /* contact */
+    .contact{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-left{
+        height: 500px;
+        width: 90%;
+    }
+    .contact-right{
+        width: 90%;
+    }
+    .input{
+        display: flex;
+        flex-direction: column;
+    }
+    .input .input1{
+        height: 50px;
+        width: 400px;
+        margin-top: 70px;
+        border-radius: 10px;
+        border: 2px solid black;
+        font-size: 20px;
+    }
+    .input .input2{
+        height: 50px;
+        width: 400px;
+        margin-top: 70px;
+        border-radius: 10px;
+        border: 2px solid black;
+        font-size: 20px;
+    }
+    textarea{
+        height: 100px;
+        width: 400px;
+        border: 2px solid black;
+        margin-top: 50px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    .submit-btn button{
+        height: 50px;
+        width: 400px;
+        margin-top: 20px;
+        background-color: black;
+        color: palegreen;
+        font-size: 20px;
+        border: none;
+        border-radius: 10px;
     }
 }
 
-
-   
