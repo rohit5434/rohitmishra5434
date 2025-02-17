@@ -19,27 +19,24 @@ toggleButton.addEventListener("click", () => {
 });
 
 // Navbar Click Effect
+/*  */
 let navH1 = document.querySelector(".nav-h1");
+let body = document.querySelector("body");
 let navOptions = document.querySelector(".nav-options");
-let navBtn = document.querySelector(".nav-btn");
+let navBtn = document.querySelector(".nav-btn"); 
 
-navH1.addEventListener("click", function () {
-    document.body.style.backgroundColor = "black";
-    document.body.style.color = "palegreen";
-    document.body.style.display = "flex";
-    document.body.style.alignItems = "center";
-    document.body.style.justifyContent = "center";
-    document.body.style.fontSize = "80px";
-
-    // Hide elements instead of overwriting body
-    navH1.style.display = "none";
-    navOptions.style.display = "none";
-    navBtn.style.display = "none";
-
-    let title = document.createElement("h1");
-    title.textContent = "PORTFOLIO";
-    document.body.appendChild(title);
-});
+navH1.addEventListener("click",function(){
+   body.style.backgroundColor="black";
+   navH1.style.display="none";
+   navOptions.style.display="none";
+   navBtn.style.display="none";
+   body.innerHTML='<h1>PORTFOLIO</h1>';
+   body.style.color="palegreen";
+   body.style.display="flex";
+   body.style.alignItems="center";
+   body.style.justifyContent="center";
+   body.style.fontSize="80px";
+})
 
 // Image Toggle
 let imageElement = document.querySelector(".herosection-right-myimage");
