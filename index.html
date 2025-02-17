@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,24 +11,41 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Navbar -->
+
     <div class="nav">
-        <div class="nav-h1">
-            <h1 class="okk"><span>PORT</span>FOLIO</h1>
-        </div>
-       
-        <div class="nav-options">
-            <a href="#nav1" class="home">Home</a>
-            <a href="#about">About Me</a>
-            <a href="#about">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="certificates.html">Certificates</a>
-        </div>
-        <div class="nav-btn">
-            <button onclick="location.href='#contact'">Contact me</button>
-        </div>
-        <button id="darkModeToggle" class="ok">🌙</button>
+            <!-- Menu Button for Mobile (☰) -->
+    <button class="menu-btn">☰</button>
+    
+    <div class="nav-h1">
+        <h1 class="okk"><span>PORT</span>FOLIO</h1>
     </div>
+
+    <!-- Normal Navbar for Larger Screens -->
+    <div class="nav-options">
+        <a href="#nav1" class="home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#about">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="certificates.html">Certificates</a>
+        <!-- <a href="#contact">Contact Me</a> -->
+    </div>
+
+    <!-- Sidebar Menu for Mobile -->
+    <div class="sidebar">
+        <button class="close-btn">&times;</button>
+        <a href="#nav1">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#about">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="certificates.html">Certificates</a>
+        <a href="#contact">Contact Me</a>
+    </div>
+    <div class="nav-btn">
+        <button onclick="location.href='#contact'">Contact me</button>
+    </div>
+    <button id="darkModeToggle" class="ok">🌙</button>
+</div>
+
     
     <!-- Hero Section -->
     <div class="herosection" id="nav1">
